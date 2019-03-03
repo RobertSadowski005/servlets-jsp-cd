@@ -10,8 +10,15 @@
 </head>
 <body>
 
+    <%--<jsp:useBean id="user" scope="session" class="pl.sda.model.User"/>--%>
+
+    <%--<jsp:getProperty name="user" property="login" value="Nieznany user"/>--%>
+
+    <jsp:param name="" value=""
+
     <section>
         <h1>Strona główna</h1>
+        <%--<h3>Jesteś zalogowany jako: <jsp:getProperty name="user" property="login"/></h3>--%>
     </section>
 
 </body>

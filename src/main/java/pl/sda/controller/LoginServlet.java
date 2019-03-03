@@ -2,6 +2,7 @@ package pl.sda.controller;
 
 import pl.sda.model.User;
 import pl.sda.repository.UserRepository;
+import sun.plugin2.message.Message;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,6 +33,9 @@ public class LoginServlet extends HttpServlet {
 
             if (optUser.isPresent()) {
                 session.setAttribute("user", optUser.get());
+
+//                Message message = new ;
+
                 req.getRequestDispatcher("/index.jsp").forward(req, resp);
             } else {
                 writer.println("Niepoprawne dane logowania");
